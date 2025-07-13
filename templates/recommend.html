@@ -30,25 +30,26 @@
   <div class="container mt-4">
     <div class="row">
       <div class="col-12 mb-4">
-        <h1 class="text-center">Top 30 Books</h1>
+        <h1 class="text-center">Recommend Books</h1>
+        <form>
+            <input type="text" class="form-control mb-3" placeholder="Enter book title or author name" id="searchInput">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
       </div>
 
-      {% for i in range(book_name|length) %}
       <div class="col-md-2 mb-4">
         <div class="card h-100">
           <img 
             class="card-img-top" 
-            src="{{ image[i] }}" 
+            src="http://images.amazon.com/images/P/0439136350.01.MZZZZZZZ.jpg" 
             alt="Book Cover">
           <div class="card-body">
-            <h6 class="card-title">{{ book_name[i] }}</h6>
-            <p class="card-text">{{ author[i] }}</p>
-            <p class="card-text">No. of Ratings: {{ no_of_ratings[i] }}</p>
-            <p class="card-text">Avg Ratings: {{ ratings[i]|round(2) }}</p>
+            <h6 class="card-title">ff</h6>
+            <p class="card-text">hf</p>
           </div>
         </div>
       </div>
-      {% endfor %}
+
     </div>
   </div>
 </body>
